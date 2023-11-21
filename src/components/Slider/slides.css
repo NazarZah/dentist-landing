@@ -1,0 +1,27 @@
+.slides {
+    margin: 50px;
+}
+
+.slides-img {
+    height: 100%;
+    width: 50%;
+    margin: auto;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+@media (max-width: 768px) {
+    .slides-img {
+        width: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

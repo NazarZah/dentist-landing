@@ -1,0 +1,72 @@
+.review-title {
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 25px;
+    text-align: center;
+}
+
+.review {
+    width: 70%;
+    max-height: 200px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: rgb(244, 247, 247);
+    animation: fadeIn 1s ease-out;
+    /* Apply animation to the entire review */
+}
+
+.review-img {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 15px;
+}
+
+.reviewer-name {
+    font-family: 'Oswald', 'sans-serif';
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.reviewer-text-container {
+    padding: 50px 10px;
+}
+
+.review-text {
+    font-family: 'Oswald', 'sans-serif';
+    font-weight: 100;
+    font-size: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .review {
+        width: 90%;
+        max-height: unset;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-img {
+        margin: 15px auto;
+    }
+
+    .reviewer-text-container {
+        padding: 20px 10px;
+        text-align: center;
+    }
+}
