@@ -94,18 +94,16 @@ button:active {
     transform: scale(0.95);
 }
 
-.icon-close {
+
+.close-icon {
     position: absolute;
-    right: 10px;
-    top: 10px;
-    font-size: 25px;
-    cursor: pointer;
-    transition: color 0.3s ease;
+        right: 10px;
+        top: 10px;
+        width: 40px;
+        cursor: pointer;
+        transition: color 0.3s ease;
 }
 
-.icon-close:hover {
-    color: red;
-}
     
     
 @media (max-width: 600px) {
