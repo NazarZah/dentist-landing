@@ -12,7 +12,7 @@ import Reviews from './components/Reviews/Reviews';
 function App() {
 
   return (
-    <div className="page-container">
+    <>
         <Header />
         <About />
         <Services />
@@ -21,7 +21,7 @@ function App() {
         <Reviews/>
         <Accordion />
         <Footer />
-      </div>
+      </>
   );
 }
 

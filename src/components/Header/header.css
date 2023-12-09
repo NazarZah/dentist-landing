@@ -38,7 +38,9 @@
 }
 
 .icons-header {
-    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    margin: 0;
 }
 
 .nav-list {
@@ -74,6 +76,10 @@
 .header-menu-button {
     display: none;
 }
+.header-menu-button-close {
+    display: none;
+}
+
 
 .logo-button-menu {
     display: none;
@@ -128,7 +134,14 @@
     .header-menu-button {
         display: block;
         margin-right: 15px;
-        font-size: 30px;
+        width: 30px;
+        transition: transform 0.4s ease;
+    }
+
+    .header-menu-button-close{
+        display: block;
+        margin-right: 10px;
+        width: 40px;
         transition: transform 0.4s ease;
     }
 }

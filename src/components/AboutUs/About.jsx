@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, memo } from 'react';
 import Form from './Form';
 import clinic from './clinic.jpeg';
 import './about.css';
@@ -46,6 +46,6 @@ function About() {
 }
 
 
-export default About;
+export default memo(About);
 
 

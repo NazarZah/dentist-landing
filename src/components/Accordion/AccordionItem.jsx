@@ -1,5 +1,6 @@
-import React, { useRef } from 'react';
-import { FaArrowDown } from "react-icons/fa";
+import React, { useRef, memo } from 'react';
+// import { FaArrowDown } from "react-icons/fa";
+import arrow from './arrow.svg';
 
 function AccordionItem({ item, isOpen, onClick }) {
     
@@ -13,7 +14,7 @@ function AccordionItem({ item, isOpen, onClick }) {
                   onClick={() => onClick()}
               >
                   {item.quastion}
-                  <FaArrowDown className={`accordion-arrow ${isOpen ? 'active' : ''}`} />
+                  <img src={arrow} alt='arrow' className={`accordion-arrow ${isOpen ? 'active' : ''}`} />
               </button>
               <div
                   className="accordion-collapse"
@@ -29,4 +30,4 @@ function AccordionItem({ item, isOpen, onClick }) {
 }
 
 
-export default AccordionItem;
+export default memo(AccordionItem);
