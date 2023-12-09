@@ -32,11 +32,23 @@ function Header() {
     setIsOpen(!isOpen);
   };
 
+  const menuIcon = isOpen ? (
+  <AiOutlineCloseCircle
+    className='header-menu-button'
+    onClick={handleMenuButtonClick}
+  />
+) : (
+  <RxHamburgerMenu
+    className='header-menu-button'
+    onClick={handleMenuButtonClick}
+  />
+);
+
   return (
     <div className='wrapper'>
           <header className='nav' ref={navRef} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
         <a href="/" className='logo-container'>
-            <img src={logo} alt='logo' className='logo' />
+            <img src={logo} alt='logo' className='logo' width='36' height='30' />
             <h1>Стоматологія dr. Захарія</h1>
               </a>
               <nav className={`header_nav ${isOpen ? 'active' : ''}`}>
@@ -53,18 +65,7 @@ function Header() {
             <li className='nav-item'> <a href='#contacts'> Контакти </a></li>
           </ul>
               </nav>
-              {!isOpen ? (
-    <RxHamburgerMenu
-        className='header-menu-button'
-        onClick={handleMenuButtonClick}
-    />
-) : (
-      <AiOutlineCloseCircle
-        className='header-menu-button'
-        onClick={handleMenuButtonClick}
-        />
-)}
-
+              {menuIcon}
       </header>
     </div>
   );

@@ -35,7 +35,9 @@ function Doctors () {
           <div className='doctor-item' key={index}>
           <img src={item.img}
             alt='Doctor Zoriana'
-            className='doctor-img'
+              className='doctor-img'
+              width='300'
+              height='500'
           />
             <h2 className='doctor-position'>{ item.name}</h2>
             <p className='doctor-description'>{item.text }</p>

@@ -1,27 +1,34 @@
-import React from 'react';
+import React  from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import photo1 from './1.jpeg';
 import photo2 from './2.jpeg';
 import photo3 from './3.jpeg';
+import photo4 from './4.jpg';
+import photo5 from './5.jpg';
+import photo6 from './6.jpg';
 import './slides.css';
 
 const photos = [
     {
         id: 1,
         name: 'Photo 1',
-        url: photo1,
+        url: photo4,
+        mobileUrl: photo1,
     },
     {
         id: 2,
         name: 'Photo 2',
-        url: photo2,
+        url: photo5,
+        mobileUrl: photo2,
     },
     {
         id: 3,
         name: 'Photo 3',
-        url: photo3,
+        url: photo6,
+        mobileUrl: photo3,
+        
     }
 ]
 
@@ -45,7 +52,7 @@ const SlideShow = () => {
           {photos.map((photo) => {
               return (
                   <div key={photo.id} >
-                      <img src={ photo.url} alt={photo.name} className='slides-img' />
+                      <img src={window.innerWidth < 768 ? photo.mobileUrl : photo.url} alt={photo.name} className='slides-img' />
               </div>
           )
       })}

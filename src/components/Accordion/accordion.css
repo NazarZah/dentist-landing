@@ -1,7 +1,7 @@
 .accordion-title {
     font-family: 'Oswald', 'sans-serif';
     text-align: center;
-    font-size: 25px;
+    font-size: 40px;
 }
 
 .accordion {
@@ -14,10 +14,12 @@
 .accordion-item {
     margin-bottom: 16px;
     border-radius: 5px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .accordion-header {
-    position: relative;
     width: 100%;
     padding: 20px 60px 20px 30px;
     background-color: rgba(56, 182, 255, 255);

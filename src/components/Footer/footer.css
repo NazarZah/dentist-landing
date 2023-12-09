@@ -17,6 +17,7 @@
 .info-items {
     text-align: center;
     margin: 10px;
+    padding: 20px;
     transition: transform 0.3s ease-out;
 
     &:hover {

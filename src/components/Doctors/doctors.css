@@ -2,7 +2,7 @@
     text-align: center;
     margin: 50px auto;
     font-family: 'Oswald', 'sans-serif';
-    font-size: 30px;
+    font-size: 40px;
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
 }
@@ -10,9 +10,10 @@
 
 .doctor-wrapper {
     display: flex;
+    width: 80%;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 70px;
     margin: 30px auto;
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;

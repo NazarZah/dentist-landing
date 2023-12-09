@@ -28,14 +28,6 @@ const arr = [
 function Accordion() {
     const [openId, setOpenId] = useState(null);
 
-    const clickHandler = (id) => {
-        if (id === openId) {
-            setOpenId(null)
-        } else {
-            setOpenId(id)
-        }
-    }
-
   return (
       <div>
           <h3 className='accordion-title'>Відповіді на поширені запитання</h3>

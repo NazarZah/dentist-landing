@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {memo} from 'react';
 import './modal.css';
 import { IoMdClose } from "react-icons/io";
 
@@ -16,4 +16,4 @@ function Modal({active, setActive, children}) {
 }
 
 
-export default Modal;
+export default memo(Modal);

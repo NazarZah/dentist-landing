@@ -30,7 +30,7 @@ function Reviews() {
         {dataReviews.map((item, index) => (
           <div className='review' key={index}>
             <div className='review-img-container'>
-                    <img src={item.img} alt='' className='review-img' />
+                    <img src={item.img} alt='' className='review-img' width='96' height='96' />
                 </div>
                 <div className='reviewer-text-container'>
                 <h5 className='reviewer-name'>{item.person}</h5>
