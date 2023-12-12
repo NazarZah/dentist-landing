@@ -1,8 +1,8 @@
 import React from 'react';
 import './services.css';
-import dentist from './dentist.jpeg';
-import ordontia from './ordontia.jpeg';
-import kids from './kid_dentistry.jpg';
+import dentist from './dentist.avif';
+import ordontia from './ordontia.avif';
+import kids from './kid_dentistry.avif';
 
 const dataServices = [
     {

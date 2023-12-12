@@ -11,13 +11,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    gap: 80px;
+    align-items: flex-end;
+    margin-bottom: 20px;
 }
 
 .info-items {
-    text-align: center;
-    margin: 10px;
-    padding: 20px;
     transition: transform 0.3s ease-out;
 
     &:hover {
@@ -32,19 +32,22 @@
 }
 
 .item {
-    padding: 5px;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-left: 85px;
+    
 }
 
-.logo-footer {
-    text-align: center;
-    margin: 10px 60px;
-}
 
 .logo_img {
     border: 1px solid rgba(56, 182, 255, 255);
     border-radius: 50%;
     width: 6rem;
-    margin: 10px 10px 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
     transition: transform 0.3s ease-out;
 
     &:hover {
@@ -53,9 +56,14 @@
 }
 
 .icons {
-    font-size: 30px;
-    margin: 10px;
-    padding: 0;
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tel {
+    margin-right: 75px;
 }
 
 .slogan {
@@ -65,12 +73,36 @@
 .copyright {
     font-size: 16px;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     border-top: 1px solid rgba(56, 182, 255, 255);
+}
+@media (max-width: 1024px) {
+.info {
+    gap: 40px;
 }
 
 
+}
+
 @media (max-width: 768px) {
+    .info {
+        gap: 10px;
+
+    }
+
+    .item {
+        padding-right: 85px;
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tel {
+        margin-left: 160px;
+    }
+
+    
     .info-items {
         margin: 5px;
     }
@@ -84,7 +116,7 @@
     }
 
     .copyright {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .info-items:nth-child(3),

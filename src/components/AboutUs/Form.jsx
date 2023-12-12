@@ -23,16 +23,18 @@ const Form = ({ formData, setFormData, onSubmit }) => {
         />
       </div>
       <div className="form-group">
-        <select
-          id="select-doctor"
-          className='select-doctors'
-          value={formData.doctor}
-          onChange={(e) => setFormData({ ...formData, doctor: e.target.value })}
-        >
-          <option value="Руслан">Руслан</option>
-          <option value="Зоряна">Зоряна</option>
-          <option value="Віра">Віра</option>
-        </select>
+        <label htmlFor="select-doctor">Виберіть лікаря:</label>
+    <select
+        id="select-doctor"
+        className='select-doctors'
+        value={formData.doctor}
+        onChange={(e) => setFormData({ ...formData, doctor: e.target.value })}
+    >
+      <option value="Руслан">Руслан</option>
+      <option value="Зоряна">Зоряна</option>
+    < option value="Віра">Віра</option>
+  </select>
+
       </div>
       <div className="form-group">
         <textarea

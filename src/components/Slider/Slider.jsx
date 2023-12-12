@@ -2,12 +2,12 @@ import React  from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import photo1 from './1.jpeg';
-import photo2 from './2.jpeg';
-import photo3 from './3.jpeg';
-import photo4 from './4.jpg';
-import photo5 from './5.jpg';
-import photo6 from './6.jpg';
+import photo1 from './1.avif';
+import photo2 from './2.avif';
+import photo3 from './3.avif';
+import photo4 from './4.avif';
+import photo5 from './5.avif';
+import photo6 from './6.avif';
 import './slides.css';
 
 const photos = [

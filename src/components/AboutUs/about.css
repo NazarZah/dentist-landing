@@ -15,9 +15,8 @@
     font-family: 'Oswald', 'sans-serif';
     font-weight: 200;
     margin: auto 5px;
-    color: gray;
+    color: rgb(64, 64, 64);
     animation: fadeIn 1s ease-out;
-    /* padding: 10px; */
 }
 
 .title-slogan {
@@ -34,8 +33,10 @@
 .clinic-title {
     font-family: 'Oswald', 'sans-serif';
     font-weight: 500;
-    font-size: 30px;
-    margin: 20px 150px;
+    font-size: 40px;
+    margin: 20px;
+    /* margin: 20px 150px; */
+    text-align: center;
     animation: fadeIn 1s ease-out;
 }
 
@@ -48,14 +49,13 @@
 .btn {
     padding: 15px;
     background-color: rgba(56, 182, 255, 1);
-    color: white;
+    color: black;
     text-align: center;
     margin: 30px 5px;
     border-radius: 5px;
     cursor: pointer;
     animation: pulse 1s infinite alternate;
 }
-
 
 .btn:hover {
     animation: none;
@@ -67,6 +67,23 @@
     transform: scale(0.9);
 }
 
+@media (max-width: 1024px) {
+
+    .clinic-info {
+       gap: 10px;
+    }
+
+
+    .clinic-title {
+        font-size: 30px;
+    }
+    .clinic-img {
+        max-width: 400px
+
+    }
+    
+}
+
 @media (max-width: 768px) {
     .clinic-info {
         flex-direction: column;
@@ -75,7 +92,6 @@
 
     .clinic-description {
         text-align: center;
-        margin: 5px 10px;
     }
 
     .clinic-title {
@@ -85,7 +101,7 @@
 
     .clinic-img {
         width: 100%;
-        max-width: 300px;
+        max-width: 600px;
     }
 }
 

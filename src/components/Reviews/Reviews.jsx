@@ -1,6 +1,6 @@
 import React from 'react';
 import './reviews.css';
-import reviewer1 from './reviewer1.jpg'
+import reviewer1 from './reviewer1.avif'
 
 const dataReviews = [
     {
@@ -33,7 +33,7 @@ function Reviews() {
                     <img src={item.img} alt='' className='review-img' width='96' height='96' />
                 </div>
                 <div className='reviewer-text-container'>
-                <h5 className='reviewer-name'>{item.person}</h5>
+                <p className='reviewer-name'>{item.person}</p>
             <p className='review-text'>{item.text}</p>
                 </div>
             

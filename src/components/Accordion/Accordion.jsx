@@ -30,7 +30,7 @@ function Accordion() {
 
   return (
       <div>
-          <h3 className='accordion-title'>Відповіді на поширені запитання</h3>
+          <h2 className='accordion-title'>Відповіді на поширені запитання</h2>
           <ul className='accordion'>
           {arr.map((item, id) => (
               <AccordionItem

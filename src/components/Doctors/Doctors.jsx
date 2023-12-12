@@ -1,6 +1,6 @@
 import React from 'react';
 import './doctors.css';
-import zoriana from './zoriana.jpeg';
+import zoriana from './zoriana.avif';
 
 const dataDoctors = [
   {

@@ -1,7 +1,7 @@
 .services-wrapper {
     display: flex;
     justify-content: space-between;
-    max-width: 80%;
+    max-width: 81%;
     margin: 20px auto;
     opacity: 0;
     animation: fadeIn 1s ease-out forwards;
@@ -32,9 +32,10 @@
 }
 
 @media (max-width: 768px) {
+
     .services-wrapper {
         flex-direction: column;
-            align-items: center;
+        align-items: center;
     }
 }
 

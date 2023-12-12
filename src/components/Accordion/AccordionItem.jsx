@@ -7,7 +7,7 @@ function AccordionItem({ item, isOpen, onClick }) {
     const itemRef = useRef(null);
 
   return (
-      <div>
+      <>
           <li className='accordion-item'>
               <button
                   className='accordion-header'
@@ -25,7 +25,7 @@ function AccordionItem({ item, isOpen, onClick }) {
                       <div className='accordion-body' ref={itemRef}>{item.answer }</div>
                   </div>
               </li>
-    </div>
+    </>
   )
 }
 

@@ -10,10 +10,10 @@
 
 .doctor-wrapper {
     display: flex;
-    width: 80%;
+    width: 85%;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 70px;
+    gap: 150px;
     margin: 30px auto;
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
@@ -64,10 +64,16 @@
     }
 }
 
+@media screen and (max-width: 1024px) { 
+    .doctor-wrapper {
+        gap: 70px;
+    }
+}
 
-@media screen and (max-width: 576px) {
+
+@media screen and (max-width: 767px) {
     .title {
-        font-size: 24px;
+        font-size: 30px;
         /* Adjust the font size for smaller screens */
     }
 
